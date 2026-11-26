@@ -1,0 +1,79 @@
+[
+  {
+    "video_id": "sample_video_01",
+    "frame_id": 1,
+    "timestamp": 1.0,
+    "tracks": [
+      {
+        "track_id": 1,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.95,
+        "bbox": [100, 120, 200, 350]
+      },
+      {
+        "track_id": 2,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.91,
+        "bbox": [300, 130, 400, 360]
+      }
+    ]
+  },
+  {
+    "video_id": "sample_video_01",
+    "frame_id": 2,
+    "timestamp": 2.0,
+    "tracks": [
+      {
+        "track_id": 1,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.96,
+        "bbox": [120, 120, 220, 350]
+      },
+      {
+        "track_id": 2,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.93,
+        "bbox": [300, 130, 400, 360]
+      }
+    ]
+  },
+  {
+    "video_id": "sample_video_01",
+    "frame_id": 3,
+    "timestamp": 3.0,
+    "tracks": [
+      {
+        "track_id": 1,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.94,
+        "bbox": [150, 120, 250, 350]
+      }
+    ]
+  },
+  {
+    "video_id": "sample_video_01",
+    "frame_id": 4,
+    "timestamp": 4.0,
+    "tracks": [
+      {
+        "track_id": 1,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.97,
+        "bbox": [180, 120, 280, 350]
+      },
+      {
+        "track_id": 2,
+        "class_id": 0,
+        "class_name": "person",
+        "confidence": 0.92,
+        "bbox": [310, 130, 410, 360]
+      }
+    ]
+  }
+]

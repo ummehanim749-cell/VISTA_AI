@@ -1,0 +1,311 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #080d18;
+  color: #eaf1fc;
+  font-family: Inter, Arial, sans-serif;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  flex-shrink: 0;
+  background: #0c1423;
+  border-right: 1px solid #1d2b40;
+  padding: 25px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 5px 8px 35px;
+  color: #42b8ff;
+}
+
+.brand h2 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.brand small {
+  color: #8192aa;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.nav-label {
+  color: #8192aa;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  padding-left: 12px;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 7px;
+}
+
+.nav-item {
+  background: transparent;
+  color: #98a8be;
+  border: 0;
+  border-radius: 9px;
+  padding: 13px 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: #142a43;
+  color: #4dbaff;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 18px 10px 0;
+  color: #9aaac0;
+  font-size: 12px;
+  border-top: 1px solid #1d2b40;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.main-area {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  min-height: 100px;
+  padding: 22px 35px;
+  background: #0c1423;
+  border-bottom: 1px solid #1d2b40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar small {
+  color: #8192aa;
+  letter-spacing: 1px;
+}
+
+.topbar h1 {
+  margin: 8px 0 0;
+  font-size: 25px;
+}
+
+.top-actions {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  color: #9eafc5;
+}
+
+.icon-btn {
+  background: transparent;
+  color: #9eafc5;
+  border: 0;
+  padding: 8px;
+}
+
+.page-content {
+  padding: 30px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.stat-card,
+.panel {
+  background: #101c2e;
+  border: 1px solid #20334d;
+  border-radius: 13px;
+  padding: 22px;
+}
+
+.stat-card {
+  color: #43b9ff;
+}
+
+.stat-card p {
+  color: #91a1b8;
+  font-size: 13px;
+}
+
+.stat-card h2 {
+  color: #ffffff;
+  margin: 10px 0 0;
+  font-size: 25px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 18px;
+}
+
+.panel h2 {
+  font-size: 17px;
+  margin-top: 0;
+}
+
+.muted {
+  color: #91a1b8;
+  font-size: 13px;
+}
+
+.action-btn {
+  background: #183451;
+  border: 1px solid #285579;
+  color: #75caff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn:hover {
+  background: #214667;
+}
+
+.event-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #24344a;
+  padding: 14px 0;
+  color: #e4ecf8;
+  overflow-wrap: anywhere;
+}
+
+.event-row svg {
+  color: #f1b65c;
+  flex-shrink: 0;
+}
+
+.error {
+  color: #ff8e8e;
+}
+
+.upload-area {
+  border: 2px dashed #315475;
+  border-radius: 13px;
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #65c1ff;
+  cursor: pointer;
+  background: #0b1728;
+}
+
+.upload-area p {
+  color: #8c9eb5;
+  font-size: 12px;
+}
+
+.video {
+  width: 100%;
+  max-height: 420px;
+  margin-top: 15px;
+  background: #000;
+}
+
+.json-view {
+  max-height: 600px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #080f1c;
+  padding: 15px;
+  border-radius: 9px;
+  color: #9cd6ff;
+  font-size: 12px;
+}
+
+@media (max-width: 950px) {
+  .sidebar {
+    width: 205px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .sidebar {
+    width: 70px;
+    padding: 15px 8px;
+  }
+
+  .brand {
+    padding: 5px 0 25px;
+  }
+
+  .brand h2,
+  .brand small,
+  .nav-label,
+  .nav-item:not(.active) {
+    display: none;
+  }
+
+  .nav-item {
+    justify-content: center;
+    padding: 12px 5px;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .topbar {
+    padding: 17px;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar h1 {
+    font-size: 19px;
+  }
+}
